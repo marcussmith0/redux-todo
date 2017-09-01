@@ -41,7 +41,7 @@ class Input extends Component {
 
 
 export default reduxForm ({ 
-    form: "Input"}
-)(
+    form: "Input"
+})(
     connect(null, { createTodo })(Input)
 )
