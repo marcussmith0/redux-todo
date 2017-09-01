@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { reduxForm } from 'redux-form';
 
-import todos from './index';
+import todos from './reducers_todo';
 
 const rootReducer = combineReducers({
     todos: todos,
