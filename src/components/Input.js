@@ -19,7 +19,8 @@ class Input extends Component {
         )
     }
     
-    onSubmit(values) {
+    onSubmit(value) {
+        this.props.createTodo(value);
 
     }
 
