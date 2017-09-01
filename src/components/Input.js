@@ -6,7 +6,7 @@ import { createTodo } from '../actions/index';
 
 class Input extends Component {
 
-    renderInput() {
+    renderInput(field) {
 
         return (
             <div>
@@ -14,12 +14,14 @@ class Input extends Component {
                 className="form-control" 
                 type="text"
                 placeholder="Enter you to-do"
+                { ...field.input }
                 />
             </div>
         )
     }
     
     onSubmit(value) {
+        console.log(value);
         this.props.createTodo(value);
 
     }
