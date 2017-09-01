@@ -19,7 +19,7 @@ class Input extends Component {
         )
     }
     
-    onSubmit() {
+    onSubmit(values) {
 
     }
 
