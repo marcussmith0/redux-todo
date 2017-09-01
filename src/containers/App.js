@@ -12,6 +12,7 @@ class App extends Component {
 
                 <Input />
                 <hr/>
+                {console.log(this.props.todos)}
             </div>
         )
     }
