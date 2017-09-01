@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm, reset } from 'redux-form';
 
 import { createTodo } from '../actions/index';
 
@@ -41,9 +41,12 @@ class Input extends Component {
     }
 }
 
+const afterSumbit = (results, dispatch) =>
+            dispatch(reset("Input"));
 
 export default reduxForm ({ 
-    form: "Input"
+    form: "Input",
+    onSubmitSuccess: afterSumbit
 })(
     connect(null, { createTodo })(Input)
 )
