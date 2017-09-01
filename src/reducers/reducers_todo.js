@@ -6,7 +6,7 @@ import { CREATE_TODO } from '../actions/index';
 let id = 0;
 
 export default function (state= {}, action) {
-    switch(action.payload) {
+    switch(action.type) {
 
         case CREATE_TODO:
             action.payload.id = id++;
