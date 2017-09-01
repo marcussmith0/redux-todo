@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 
 import Input from '../components/Input';
@@ -16,4 +17,8 @@ class App extends Component {
     }
 }
 
-export default App;
+function mapStateToProps(state) {
+    return  { todos: state.todos }
+}
+
+export default connect(mapStateToProps)(App);
