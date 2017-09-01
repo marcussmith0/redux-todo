@@ -32,7 +32,7 @@ class Input extends Component {
         return (
             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                 <Field
-                name="input"
+                name="todo"
                 component={this.renderInput}
                 />
                 <button type="submit">Add</button>
