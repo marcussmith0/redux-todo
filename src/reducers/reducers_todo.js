@@ -11,10 +11,8 @@ export default function (state= {}, action) {
         case CREATE_TODO:
             action.payload.id = id++;
             const keysMapped = _.mapKeys(action.payload, "id");
-            
+
             return { ...state, ...keysMapped }
-
-
 
         default:
             return state
