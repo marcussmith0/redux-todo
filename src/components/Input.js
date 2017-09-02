@@ -13,7 +13,7 @@ class Input extends Component {
                 <input 
                 className="form-control" 
                 type="text"
-                placeholder="Enter you to-do"
+                placeholder="Enter your to-do"
                 { ...field.input }
                 />
             </div>
@@ -21,7 +21,6 @@ class Input extends Component {
     }
     
     onSubmit(value) {
-        console.log(value);
         this.props.createTodo(value);
 
     }
